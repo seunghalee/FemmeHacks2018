@@ -1,216 +1,179 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Reminders for DEADLINES</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
-  
-      <link rel="stylesheet" href="css/style.css">
+/* Set a style for all buttons */
+body {
 
-  
+    background-color: #34495e;
+    margin: right;
+}
+button {
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: center ;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 12px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 25%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
 </head>
-
 <body>
 
-  <div class="route" id="index"></div>
-<div class="route" id="oct-week-3"></div>
-<div class="route" id="oct-week-4"></div>
-<div class="route" id="nov-week-1"></div>
-<div class="route" id="schedule"></div>
-<main class="cal-device">
-  <header class="cal-header">
-    <div class="cal-subheader"></div>
-    <div class="cal-bar">
-      <div class="cal-button -left">
-        <i class="fa fa-bars -calendar"></i>
-        <a href="#index" class="fa fa-chevron-left -schedule"></a>
-      </div>
-      <div class="cal-title">
-        <div class="cal-heading -calendar">Calendar</div>
-        <div class="cal-heading -schedule">This Day!</div>
-      </div>
-      <div class="cal-button -right">
-        <i class="fa fa-search"></i>
-      </div>
+<h2>Login to DocuHome</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://raw.githubusercontent.com/seunghalee/FemmeHacks2018/master/DocuHouse%20Logo.png" alt="Avatar" class="avatar">
     </div>
-  </header>
-  <section class="cal-app">
-    <header class="cal-week">
-      <div class="cal-weekday">SUN</div>
-      <div class="cal-weekday">MON</div>
-      <div class="cal-weekday">TUE</div>
-      <div class="cal-weekday">WED</div>
-      <div class="cal-weekday">THU</div>
-      <div class="cal-weekday">FRI</div>
-      <div class="cal-weekday">SAT</div>
-    </header>
-    <div class="cal-scene -calendar">
-      <div class="cal-month -october">
-        <header class="cal-header">
-          <a class="cal-link" href="#oct-week-1"><span>October</span></a>
-          <a class="cal-arrow" href="#nov-week-1"><i class="fa fa-chevron-up"></i></a>
-          <a class="cal-arrow" href="#oct-week-4"><i class="fa fa-chevron-up"></i></a>
-        </header>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a href="#schedule"  class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-      </div>
-      <div class="cal-month -november">
-        <header class="cal-header">
-          <a class="cal-link" href="#nov-week-1"><span>November</span></a>
-          <a class="cal-arrow"><i class="fa fa-chevron-up"></i></a>
-        </header>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a href="#schedule" class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a href="#schedule" class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a href="#schedule" class="cal-day"></a>
-        <a href="#schedule" class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-      </div>
-      <div class="cal-month -december">
-        <header class="cal-header">
-          <a class="cal-link"><span>December</span></a>
-          <a class="cal-arrow" href="#nov-week-1"><i class="fa fa-chevron-down"></i></a>
-          <a class="cal-arrow" href="#oct-week-3"><i class="fa fa-chevron-down"></i></a>
-        </header>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a href="#schedule" class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a href="#schedule" class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-      </div>
-      <div class="cal-month -january">
-        <header class="cal-header">
-          <div class="cal-link"><span>January</span></div>
-          <a class="cal-arrow" href="#oct-week-4"><i class="fa fa-chevron-down"></i></a>
-        </header>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-        <a class="cal-day"></a>
-      </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked"> Remember me
+      </label>
     </div>
-    <div class="cal-scene -schedule">
-      <div class="cal-item -long">
-        <div class="cal-time"><span>Today</span></div>
-        <div class="cal-task">
-          <p>Last day to upload your <strong>Contract</strong></p>
-        </div>
-      </div>
-      <div class="cal-item">
-      </div>
-      <div class="cal-item"></div>
-        <div class="cal-time"></div>
-        <div class="cal-task"></div>
-      </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
-  </section>
-</main>
-<div class="meta">
-  <h1>Reminders for DEADLINES!</h1>
-  <p>
-    Be sure to check on your calendar every regularly to not miss important dates<br /></a>
-  </p>
-  <p>
-    Make sure to click on each date to know if there is any legal document is due.<br>
-  </p>
-  <p>
-    You're so close to getting your new home!
-  </p>
+  </form>
 </div>
-  
-  
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 </body>
-
 </html>
