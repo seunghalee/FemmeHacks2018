@@ -1,97 +1,216 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>FEMMHACKS2018</title>
+<html lang="en" >
 
-		<meta name="description" content="Website for house buyers" />
-		<meta name="keywords" content="house, realestate" />
-		<meta name="author" content="Seungha Lee" />
+<head>
+  <meta charset="UTF-8">
+  <title>Reminders for DEADLINES</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/icons.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+  
+      <link rel="stylesheet" href="css/style.css">
 
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<!-- Push Wrapper -->
-			<div class="mp-pusher" id="mp-pusher">
+  
+</head>
 
-				<!-- mp-menu -->
-				<nav id="mp-menu" class="mp-menu">
-					<div class="mp-level">
-						<h2 class="icon icon-world">MENU</h2>
-						<ul>
-							<li>
-								<a class="icon icon-news" href="index.html">Documents</a>
-								<div class="mp-level">
-									<h2>Documents</h2>
-										<ul>
-											<li><a href="index.SellerDisclosures.html"> Seller Discloures</a></li>
-											<li><a href="index.Bid.html"> Offers</a></li>
-											<li><a href="index.Financials.html"> Financials</a></li>
-											<li><a href="index.Inspections.html"> Inspections</a></li>
-											<li><a href="index.Appraisals.html"> Appraisals</a></li>
-											<li><a href="index.DocumentsFromAgent.html"> Documents from Agent</a></li>
-										</ul>
-								</div>
-								<a class="icon icon-news" href="index.Calenar.html">Calendar</a>
-								<a class="icon icon-news" href="index.Actions.html">Actions</a>
-							</li>
-						</ul>
-					</div>
-				</nav>			
+<body>
 
-				<!-- /mp-menu -->
+  <div class="route" id="index"></div>
+<div class="route" id="oct-week-3"></div>
+<div class="route" id="oct-week-4"></div>
+<div class="route" id="nov-week-1"></div>
+<div class="route" id="schedule"></div>
+<main class="cal-device">
+  <header class="cal-header">
+    <div class="cal-subheader"></div>
+    <div class="cal-bar">
+      <div class="cal-button -left">
+        <i class="fa fa-bars -calendar"></i>
+        <a href="#index" class="fa fa-chevron-left -schedule"></a>
+      </div>
+      <div class="cal-title">
+        <div class="cal-heading -calendar">Calendar</div>
+        <div class="cal-heading -schedule">This Day!</div>
+      </div>
+      <div class="cal-button -right">
+        <i class="fa fa-search"></i>
+      </div>
+    </div>
+  </header>
+  <section class="cal-app">
+    <header class="cal-week">
+      <div class="cal-weekday">SUN</div>
+      <div class="cal-weekday">MON</div>
+      <div class="cal-weekday">TUE</div>
+      <div class="cal-weekday">WED</div>
+      <div class="cal-weekday">THU</div>
+      <div class="cal-weekday">FRI</div>
+      <div class="cal-weekday">SAT</div>
+    </header>
+    <div class="cal-scene -calendar">
+      <div class="cal-month -october">
+        <header class="cal-header">
+          <a class="cal-link" href="#oct-week-1"><span>October</span></a>
+          <a class="cal-arrow" href="#nov-week-1"><i class="fa fa-chevron-up"></i></a>
+          <a class="cal-arrow" href="#oct-week-4"><i class="fa fa-chevron-up"></i></a>
+        </header>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a href="#schedule"  class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+      </div>
+      <div class="cal-month -november">
+        <header class="cal-header">
+          <a class="cal-link" href="#nov-week-1"><span>November</span></a>
+          <a class="cal-arrow"><i class="fa fa-chevron-up"></i></a>
+        </header>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a href="#schedule" class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a href="#schedule" class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a href="#schedule" class="cal-day"></a>
+        <a href="#schedule" class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+      </div>
+      <div class="cal-month -december">
+        <header class="cal-header">
+          <a class="cal-link"><span>December</span></a>
+          <a class="cal-arrow" href="#nov-week-1"><i class="fa fa-chevron-down"></i></a>
+          <a class="cal-arrow" href="#oct-week-3"><i class="fa fa-chevron-down"></i></a>
+        </header>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a href="#schedule" class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a href="#schedule" class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+      </div>
+      <div class="cal-month -january">
+        <header class="cal-header">
+          <div class="cal-link"><span>January</span></div>
+          <a class="cal-arrow" href="#oct-week-4"><i class="fa fa-chevron-down"></i></a>
+        </header>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+        <a class="cal-day"></a>
+      </div>
+    </div>
+    <div class="cal-scene -schedule">
+      <div class="cal-item -long">
+        <div class="cal-time"><span>Today</span></div>
+        <div class="cal-task">
+          <p>Last day to upload your <strong>Contract</strong></p>
+        </div>
+      </div>
+      <div class="cal-item">
+      </div>
+      <div class="cal-item"></div>
+        <div class="cal-time"></div>
+        <div class="cal-task"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="meta">
+  <h1>Reminders for DEADLINES!</h1>
+  <p>
+    Be sure to check on your calendar every regularly to not miss important dates<br /></a>
+  </p>
+  <p>
+    Make sure to click on each date to know if there is any legal document is due.<br>
+  </p>
+  <p>
+    You're so close to getting your new home!
+  </p>
+</div>
+  
+  
 
-				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
-					<div class="scroller-inner">
-						<!-- Top Navigation -->
-						<div class="codrops-top clearfix">
-							<a class="codrops-icon codrops-icon-prev" href="http://krstnalexis.wixsite.com/docuhouse"><span>MAIN PAGE</span></a>
-							<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://krstnalexis.wixsite.com/docuhouse"><span>SIGN UP</span></a></span>
-						</div>
-						<header class="codrops-header">
-							<img src="https://raw.githubusercontent.com/seunghalee/FemmeHacks2018/master/DocuHouse%20Logo.png" alt="logo"/>
-							<br>
-							<h1>Documents <span>Seller Disclosures</span></h1>
+</body>
 
-						</header>
-						<div class="content clearfix">
-							<div class="block block-40 clearfix">
-								<p><a href="#" id="trigger" class="menu-trigger">MAIN MENU</a></p>
-								<nav class="codrops-demos">
-									<a class="current-demo" href="index.SellerDisclosures.html">Seller Disclosures</a>
-									<a href="index.HOA.html">HOA Meeting Minutes</a>
-									<a href="index.UndergroundTankInspection.html">Underground Tank Inspection</a>
-								</nav>
-							</div>
-							<div class="block block-60">
-								<p><strong>Seller Disclosers</strong></p>
-								<img src="https://www.nevadalegalforms.com/os/resources/media/merchant/full/SELLER39SREALPROPERTYDISCLOSUREFORM.jpg">
-								<p>A Seller Disclosure is a document provided by a home seller to a home buyer that outlines known issues with a property and other historical details. A seller disclosure often includes details about defective appliances or systems, known repair issues or history of leaks or environmental contamination.</p>
-							</div>
-							<div class="info">
-								<p>Partners:</p>
-								<p><a href="http://goo.gl/JLJ4v5">XX REALTOR</a></p>
-								<p><a href="https://www.docusign.com/">DocuSign</a></p>
-							</div>
-						</div>
-					</div><!-- /scroller-inner -->
-				</div><!-- /scroller -->
-
-			</div><!-- /pusher -->
-		</div><!-- /container -->
-		<script src="js/classie.js"></script>
-		<script src="js/mlpushmenu.js"></script>
-		<script>
-			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
-		</script>
-	</body>
 </html>
