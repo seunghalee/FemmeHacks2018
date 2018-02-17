@@ -1,11 +1,6 @@
 # DocuHouse
 All of your real estate documentation in one place.
 
-# Table of Contents
-1. [Inspiration](README.md#inspiration)
-2. [What it does](README.md#what-it-does])
-3. [Built With](README.md#built-with)
-
 # Inspiration
 One of our teammates is buying her second house and is buried in various emails, miscommunications, and scattered deadlines across many different parties (agents, loan officers, escrow companies, etc.).
 
